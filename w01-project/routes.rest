@@ -1,0 +1,37 @@
+//w01-project/users.rest
+### Create a new user
+POST http://localhost:3000/api/users
+Content-Type: application/json
+
+{
+    "username": "bob_dev",
+    "email": "bob.dev@example.com",
+    "firstName": "Bob",
+    "lastName": "Johnson",
+    "role": "Developer",
+    "projects": [
+    "Project C",
+    "Project D"
+    ],
+    "active": true,
+    "joinedDate": "2023-10-26T11:00:00.000Z",
+    "lastLoginIP": "192.168.1.101"
+}
+
+### Get all users
+GET http://localhost:3000/api/users
+
+### Get user by ID
+GET http://localhost:3000/api/users/67cf3ad3fa67385dab9f8e7f
+
+### Update user by ID
+PATCH http://localhost:3000/api/users/67cf3ad3fa67385dab9f8e7f
+Content-Type: application/json
+
+{
+    "firstName": "Charlie",
+    "lastName": "Williams"
+}
+
+### Delete user by ID
+DELETE http://localhost:3000
