@@ -1,5 +1,5 @@
 // server.js
-// Entry point for the application
+// Entry point for the application acting as a server
 
 const express = require('express');
 const app = express();
@@ -23,4 +23,8 @@ connectDB().then(() => {
     console.error(error.message);
     process.exit(1);
 });
+
+
+
+
 
