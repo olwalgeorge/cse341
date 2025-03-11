@@ -1,3 +1,6 @@
+// w01-project/app/routes/users.js
+// Router for user routes 
+
 const express = require('express');
 const router = express.Router();
 const userController = require('../controllers/user.controller');

@@ -1,9 +1,14 @@
 // server.js
 // Entry point for the application
+
 const express = require('express');
 const app = express();
 const connectDB = require('./config/database');
 const userRoutes = require('./app/routes/user.routes');
+
+app.get('/', (req, res) => {
+    res.status(200).send('Welcome to My Project1 Application');
+});
 
 app.use(express.json());
 
