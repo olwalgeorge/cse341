@@ -33,10 +33,10 @@ Content-Type: application/json
 
 {
     "username": "coder123",
-    "email": "coder123@example.com",
+    "email": "coder139@example.com",
     "firstName": "Alice",
     "lastName": "Smith"
 }
 
 ### Delete contact by ID
-DELETE https://cse341-w01-project-f4cy.onrender.com/
+DELETE https://cse341-w01-project-f4cy.onrender.com/api/contacts/67d187773fcfa560ca6f42b9

@@ -1,6 +1,6 @@
 # My W01-Project API
 
-This is a simple REST API for managing users, built with Node.js, Express, and MongoDB for course work in BYU CSE341 Web Services 
+This is a simple REST API for managing contacts, built with Node.js, Express, and MongoDB for course work in BYU CSE341 Web Services 
 
 ## Prerequisites
 
@@ -47,11 +47,11 @@ This is a simple REST API for managing users, built with Node.js, Express, and M
 
 ## API Endpoints
 
-* **GET /api/users:** Get all users.
-* **GET /api/users/:userId:** Get a user by ID.
-* **POST /api/users:** Create a new user.
-* **PATCH /api/users/:userId:** Update a user by ID.
-* **DELETE /api/users/:userId:** Delete a user by ID.
+* **GET /api/contacts:** Get all contacts.
+* **GET /api/contacts/:contactId:** Get a contact by ID.
+* **POST /api/contacts:** Create a new contact.
+* **PATCH /api/contacts/:contactId:** Update a contact by ID.
+* **DELETE /api/contacts/:contactId:** Delete a contact by ID.
 
 ## Swagger Documentation
 
@@ -60,33 +60,33 @@ This is a simple REST API for managing users, built with Node.js, Express, and M
 ## Using the API with .rest files
 
 * A `routes.rest` file is provided for quick testing with VS Code's REST Client extension.
-* Open `users.rest` in VS Code and send requests by clicking "Send Request" above each request block.
-* Example content of users.rest:
+* Open `contacts.rest` in VS Code and send requests by clicking "Send Request" above each request block.
+* Example content of contacts.rest:
 
 ```rest
-### Create a new user
-POST http://localhost:3000/api/users
+### Create a new contact
+POST http://localhost:3000/api/contacts
 Content-Type: application/json
 
 {
-    "username": "testUser",
+    "contactname": "testcontact",
     "email": "test@example.com"
 }
 
-### Get all users
-GET http://localhost:3000/api/users
+### Get all contacts
+GET http://localhost:3000/api/contacts
 
-### Get user by ID
-GET http://localhost:3000/api/users/your_user_id
+### Get contact by ID
+GET http://localhost:3000/api/contacts/your_contact_id
 
-### Update user by ID
-PATCH http://localhost:3000/api/users/your_user_id
+### Update contact by ID
+PATCH http://localhost:3000/api/contacts/your_contact_id
 Content-Type: application/json
 
 {
-    "username": "updatedUser",
+    "contactname": "updatedcontact",
     "email": "updated@example.com"
 }
 
-### Delete user by ID
-DELETE http://localhost:3000/api/users/your_user_id
+### Delete contact by ID
+DELETE http://localhost:3000/api/contacts/your_contact_id
