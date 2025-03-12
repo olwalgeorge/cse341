@@ -1,4 +1,5 @@
 //w01-project/config/swagger.js
+// Configuration for Swagger for testing and documentation
 const swaggerJsdoc = require('swagger-jsdoc');
 
 const options = {
@@ -19,15 +20,24 @@ const options = {
         User: {
           type: 'object',
           properties: {
-            username: { type: 'string' },
-            email: { type: 'string' },
-            // Add other user properties here
+            username: { type: 'string', required: true, unique: true },
+            email: { type: 'string', required: true, unique: true },
+            firstName: { type: 'string' },
+            lastName: { type: 'string' },
+            role: { type: 'string' },
+            projects: {
+              type: 'array',
+              items: { type: 'string' },
+            },
+            active: { type: 'boolean' },
+            joinedDate: { type: 'string', format: 'date-time' },
+            lastLoginIP: { type: 'string' },
           },
         },
       },
     },
   },
-  apis: ['./app/routes/*.js'], // Path to the API docs
+  apis: ['./app/routes/*.js'], // Path to your route files
 };
 
 module.exports = swaggerJsdoc(options);

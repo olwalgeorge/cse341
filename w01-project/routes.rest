@@ -1,4 +1,6 @@
 //w01-project/users.rest
+//Test project vocabulary and endpoints with sample rest operations
+
 ### Create a new user
 POST http://localhost:3000/api/users
 Content-Type: application/json
