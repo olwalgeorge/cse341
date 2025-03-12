@@ -12,7 +12,7 @@ const options = {
     },
     servers: [
       {
-        url: 'http://localhost:3000/api',
+        url: 'https://cse341-w01-project-f4cy.onrender.com',
       },
     ],
     components: {
