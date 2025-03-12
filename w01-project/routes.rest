@@ -1,41 +1,42 @@
-//w01-project/users.rest
+//w01-project/contacts.rest
 //Test project vocabulary and endpoints with sample rest operations
 
-### Create a new user
-POST http://localhost:3000/api/users
+### Create a new contact
+POST http://localhost:3000/api/contacts
 Content-Type: application/json
 
 {
-    "username": "bob_dev",
-    "email": "bob.dev@example.com",
-    "firstName": "Bob",
-    "lastName": "Johnson",
+    "username": "eve_dev",
+    "email": "eve.dev@example.com",
+    "firstName": "Eve",
+    "lastName": "Doe",    
     "role": "Developer",
+    "favoriteColor": "blue",
     "projects": [
-    "Project C",
-    "Project D"
+    "Project A",
+    "Project B"
     ],
     "active": true,
     "joinedDate": "2023-10-26T11:00:00.000Z",
-    "lastLoginIP": "192.168.1.101"
+    "lastLoginIP": "192.168.1.102"
 }
 
-### Get all users
-GET http://localhost:3000/api/users
+### Get all contacts
+GET https://cse341-w01-project-f4cy.onrender.com
 
-### Get user by ID
-GET http://localhost:3000/api/users/67cf3ad3fa67385dab9f8e7f
+### Get contact by ID
+GET http://localhost:3000/api/contacts/67d14888fa67385dab9fad44
 
-### Update user by ID
-PATCH http://localhost:3000/api/users/67cf3ad3fa67385dab9f8e7f
+### Update contact by ID
+PATCH http://localhost:3000/api/contacts/67d14888fa67385dab9fad44
 Content-Type: application/json
 
 {
-    "username": "charlie_pm",
-    "email": "charlie.pm@example.com",
-    "firstName": "Charlie",
-    "lastName": "Williams"
+    "username": "coder123",
+    "email": "coder123@example.com",
+    "firstName": "Alice",
+    "lastName": "Smith"
 }
 
-### Delete user by ID
-DELETE http://localhost:3000/api/users/67d130ccb554b7a8f4a87c33
+### Delete contact by ID
+DELETE http://localhost:3000/

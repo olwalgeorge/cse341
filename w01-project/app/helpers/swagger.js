@@ -8,7 +8,7 @@ const options = {
     info: {
       title: 'My Project1 API',
       version: '1.0.0',
-      description: 'API for managing users',
+      description: 'API for managing contacts',
     },
     servers: [
       {
@@ -17,7 +17,7 @@ const options = {
     ],
     components: {
       schemas: {
-        User: {
+        Contact: {
           type: 'object',
           properties: {
             username: { type: 'string', required: true, unique: true },
@@ -25,6 +25,7 @@ const options = {
             firstName: { type: 'string' },
             lastName: { type: 'string' },
             role: { type: 'string' },
+            favoriteColor: { type: 'string', enum: ['red', 'green', 'blue'] },
             projects: {
               type: 'array',
               items: { type: 'string' },

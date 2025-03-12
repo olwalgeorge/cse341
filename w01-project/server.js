@@ -4,7 +4,7 @@
 const express = require('express');
 const app = express();
 const connectDB = require('./config/database');
-const userRoutes = require('./app/routes/user.routes');
+const contactRoutes = require('./app/routes/contact.routes');
 const swaggerUi = require('swagger-ui-express');
 const swaggerConfig = require('./app/helpers/swagger'); // Import swagger config
 
@@ -17,7 +17,7 @@ app.get('/', (req, res) => {
   res.status(200).send('Welcome to My Project1 Application');
 });
 
-app.use('/api', userRoutes);
+app.use('/api', contactRoutes);
 
 connectDB()
   .then(() => {
