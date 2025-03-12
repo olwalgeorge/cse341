@@ -2,7 +2,7 @@
 //Test project vocabulary and endpoints with sample rest operations
 
 ### Create a new contact
-POST http://localhost:3000/api/contacts
+POST https://cse341-w01-project-f4cy.onrender.com/api/contacts
 Content-Type: application/json
 
 {
@@ -22,13 +22,13 @@ Content-Type: application/json
 }
 
 ### Get all contacts
-GET https://cse341-w01-project-f4cy.onrender.com
+GET https://cse341-w01-project-f4cy.onrender.com/api/contacts
 
 ### Get contact by ID
-GET http://localhost:3000/api/contacts/67d14888fa67385dab9fad44
+GET https://cse341-w01-project-f4cy.onrender.com/api/contacts/67d14888fa67385dab9fad44
 
 ### Update contact by ID
-PATCH http://localhost:3000/api/contacts/67d14888fa67385dab9fad44
+PATCH https://cse341-w01-project-f4cy.onrender.com/api/contacts/67d14888fa67385dab9fad44
 Content-Type: application/json
 
 {
@@ -39,4 +39,4 @@ Content-Type: application/json
 }
 
 ### Delete contact by ID
-DELETE http://localhost:3000/
+DELETE https://cse341-w01-project-f4cy.onrender.com/
