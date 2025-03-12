@@ -31,9 +31,11 @@ PATCH http://localhost:3000/api/users/67cf3ad3fa67385dab9f8e7f
 Content-Type: application/json
 
 {
+    "username": "charlie_pm",
+    "email": "charlie.pm@example.com",
     "firstName": "Charlie",
     "lastName": "Williams"
 }
 
 ### Delete user by ID
-DELETE http://localhost:3000
+DELETE http://localhost:3000/api/users/67d130ccb554b7a8f4a87c33
